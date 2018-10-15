@@ -1,8 +1,10 @@
 
 ## define bucket location
-export OUT_BUCKET=gs://recserve_mp-bigdata/nst
 
 export IN_BUCKET=gs://recserve_mp-bigdata/nst/nst.csv
+
+-- [Optional]  export OUT_BUCKET=gs://recserve_mp-bigdata/nst
+
 
 ## copy GA training data from google cloud bucket to GCE instance 
 gsutil  cp -r gs://recserve_mp-bigdata/nst/nst.csv  data
